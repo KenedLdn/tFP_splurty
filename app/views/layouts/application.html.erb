@@ -22,14 +22,28 @@
 			Splurting out unsolicited best practices since 2015
 		</div>
 		<div class="col-xs-5 links">
-			<%= link_to 'Contribute', '#' %>
+			<%= link_to 'Contribute', '#', :class => 'link_1' %>
 			<%= link_to 'About', '#' %>
 		</div>
 	</header>
 	<hr class="clear"/>
 	<br class="clear" />
 
-<%= yield %>
+	<div class="container main-quote">
+		<%= yield %>
+	</div>
 
+	<footer class="footer">
+		<div class="container">
+			<div class="col-xs-6">
+				Still sleepy? <%= link_to "Try something else.", "#", :class => 'next-quote' %>
+			</div>
+			<div class="col-xs-6 footer-blurb">
+				<p>
+					Proudly presented by <a href="http://kenedldn.github.io/theFirehoseProject-intro/">Ken</a> (a.k.a. Typical Asian)
+				</p>
+			</div>
+		</div>
+	</footer>
 </body>
 </html>

@@ -1,4 +1,5 @@
 @import url(https://fonts.googleapis.com/css?family=Montserrat:700);
+@import url(https://fonts.googleapis.com/css?family=Fjalla+One);
 
 .clear {
 	clear:both;
@@ -11,13 +12,13 @@
     border-radius: 100%;
     background: #f84342;
     border: 1px solid #F7F7F7;
-    width: 80px;
-    height: 80px;
+    width: 100px;
+    height: 100px;
     margin: 10px 10px;
     text-align: center;
     color: #FFF;
-    font-size: 10px;
-    line-height: 16px;
+    font-size: 15px;
+    line-height: 19px;
     cursor: pointer;
     transform:rotate(11deg);
     -ms-transform:rotate(11deg); /* IE 9 */
@@ -28,11 +29,12 @@
 	/* Monospace stack */
 	font-family: Consolas, "Andale Mono WT", "Andale Mono", "Lucida Console", "Lucida Sans Typewriter", "DejaVu Sans Mono", "Bitstream Vera Sans Mono", "Liberation Mono", "Nimbus Mono L", Monaco, "Courier New", Courier, monospace;
 	font-style: italic;
-	padding-top: 26px;
+	padding-top: 50px;
+	font-size: 15px;
 }
 
 .links{
-	padding-top: 26px;
+	padding-top: 40px;
 }
 
 .links a{
@@ -40,18 +42,68 @@
 	font-family: 'Montserrat', serif;
 	font-size: 25px;
 	border-bottom: 1px solid #DFDFDF;
+	text-align: justify;
+}
+
+.link_1{
+	margin-right: 15px;
 }
 
 header {
 	border-top: 9px solid #F5AA2A;
 }
 
+.main-quote{
+    width: 1000px;
+    margin: 50px auto;
+    text-align: center;
+}
+
 h1{
 	font-family: 'chunkfiveroman', sans-serif;
 	font-size: 50px;
-
 }
 
 h2{
-	font-family: 'Montserrat', serif;
+	font-family: 'chunkfiveroman', serif;
+}
+
+/* Sticky footer styles
+-------------------------------------------------- */
+html {
+	position: relative;
+	min-height: 100%;
+}
+body {
+	/* Margin bottom by footer height */
+	margin-bottom: 60px;
+}
+.footer {
+	position: absolute;
+	bottom: 0;
+	width: 100%;
+	/* Set the fixed height of the footer here */
+	height: 40px;
+	background-color: #FFF2C9;
+	padding-top: 10px;
+	color: black;
+	font-weight: bold;
+	font-family: 'Montserrat', sans-serif;
+}
+
+.next-quote{
+	color: #D11755;
+	font-size: 20px;
+	margin: auto;
+}
+
+.footer-blurb{
+	font-family: 'Fjalla One', sans-serif;
+	text-align: right;
+	font-size: 10px;
+}
+
+.footer-blurb a{
+	color: #F5AA2A;
+	font-size: 15px;
 }
