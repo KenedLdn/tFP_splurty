@@ -9,20 +9,22 @@
 <body>
 	<header>
 		<div class="col-xs-2">
-			<div class="circle">
-			  <br />
-			  SUCK UP
-			  <br />
-			  &
-			  <br />
-			  WAKE UP !
-			</div>
+			<%= link_to root_path, :class => 'logo' do %>
+				<div class="circle">
+				  <br />
+				  SUCK UP
+				  <br />
+				  &
+				  <br />
+				  WAKE UP !
+				</div>
+			<% end %>
 		</div>
 		<div class="col-xs-5 slogan">
 			Splurting out unsolicited best practices since 2015
 		</div>
 		<div class="col-xs-5 links">
-			<%= link_to 'Contribute', '#', :class => 'link_1' %>
+			<%= link_to 'Contribute', new_quote_path, :class => 'link_1' %>
 			<%= link_to 'About', '#' %>
 		</div>
 	</header>
@@ -36,7 +38,7 @@
 	<footer class="footer">
 		<div class="container">
 			<div class="col-xs-6">
-				Still sleepy? <%= link_to "Try something else.", "#", :class => 'next-quote' %>
+				Still sleepy? <%= link_to "Try something else.", root_path, :class => 'next-quote' %>
 			</div>
 			<div class="col-xs-6 footer-blurb">
 				<p>
