@@ -8,8 +8,13 @@ class QuotesController < ApplicationController
 	end
 
 	def create
-		Quote.create(quote_params)
-		redirect_to root_path
+		@quote = Quote.create(quote_params)
+		if @quote.invalid?
+			flash[:error] = '<strong>Invalid input(s)!</strong>'
+			redirect_to new_quote_path
+		else
+			redirect_to root_path			
+		end
 	end
 
 	def quote_params
