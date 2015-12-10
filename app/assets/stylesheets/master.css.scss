@@ -57,10 +57,6 @@
 	text-align: center;
 }
 
-.link_1{
-	margin-right: 15px;
-}
-
 header {
 	border-top: 9px solid #F5AA2A;
 }
@@ -77,6 +73,12 @@ header {
 	color: #D11755;
 	font-size: 35px;
 	margin: auto;
+}
+
+.modal{
+	/* Monospace stack */
+	font-family: Consolas, "Andale Mono WT", "Andale Mono", "Lucida Console", "Lucida Sans Typewriter", "DejaVu Sans Mono", "Bitstream Vera Sans Mono", "Liberation Mono", "Nimbus Mono L", Monaco, "Courier New", Courier, monospace;
+	font-style: italic;
 }
 
 .about-origin{
@@ -141,7 +143,19 @@ body {
 	font-size: 10px;
 }
 
+@media (max-width: 750px){
+	.footer-blurb{
+		font-family: 'Fjalla One', sans-serif;
+		text-align: left;
+		font-size: 10px;
+	}
+}
+
 .footer-blurb a{
 	color: #F5AA2A;
 	font-size: 15px;
+}
+
+::selection{
+	background-color: #FFF2C9;
 }
