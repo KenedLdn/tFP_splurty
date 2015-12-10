@@ -17,6 +17,11 @@ class QuotesController < ApplicationController
 		end
 	end
 
+	def about
+	end
+
+	private
+
 	def quote_params
 		params.require(:quote).permit(:saying, :author)
 	end

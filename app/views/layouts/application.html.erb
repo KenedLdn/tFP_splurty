@@ -8,7 +8,7 @@
 </head>
 <body>
 	<header>
-		<div class="col-xs-2">
+		<div class="col-xs-3">
 			<%= link_to root_path, :class => 'logo' do %>
 				<div class="circle">
 				  <br />
@@ -21,26 +21,26 @@
 			<% end %>
 		</div>
 		<div class="col-xs-5 slogan">
-			Splurting out unsolicited best practices since 2015
+				Splurting out unsolicited best practices since 2015
 		</div>
-		<div class="col-xs-5 links">
+		<div class="col-xs-4 links", style="text-align: right">
 			<%= link_to 'Contribute', new_quote_path, :class => 'link_1' %>
-			<%= link_to 'About', '#' %>
+			<%= link_to 'About', about_path, :class => 'link_1' %>
 		</div>
 	</header>
 	<hr class="clear"/>
 	<br class="clear" />
 
-	<div class="container main-quote">
+	<div class="container">
 		<%= yield %>
 	</div>
 
 	<footer class="footer">
 		<div class="container">
-			<div class="col-xs-6">
+			<div class="col-xs-8">
 				Still sleepy? <%= link_to "Try something else.", root_path, :class => 'next-quote' %>
 			</div>
-			<div class="col-xs-6 footer-blurb">
+			<div class="col-xs-4 footer-blurb">
 				<p>
 					Proudly presented by <a href="http://kenedldn.github.io/theFirehoseProject-intro/">Ken</a> (a.k.a. Typical Asian)
 				</p>

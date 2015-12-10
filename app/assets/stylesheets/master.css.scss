@@ -31,9 +31,9 @@
 
 .slogan{
 	/* Monospace stack */
+	padding-top: 40px;
 	font-family: Consolas, "Andale Mono WT", "Andale Mono", "Lucida Console", "Lucida Sans Typewriter", "DejaVu Sans Mono", "Bitstream Vera Sans Mono", "Liberation Mono", "Nimbus Mono L", Monaco, "Courier New", Courier, monospace;
 	font-style: italic;
-	padding-top: 50px;
 	font-size: 15px;
 }
 
@@ -57,19 +57,27 @@ header {
 	border-top: 9px solid #F5AA2A;
 }
 
-.main-quote{
-    width: 1000px;
-    margin: 50px auto;
-    text-align: center;
+.about-origin{
+	/* Monospace stack */
+	font-family: Consolas, "Andale Mono WT", "Andale Mono", "Lucida Console", "Lucida Sans Typewriter", "DejaVu Sans Mono", "Bitstream Vera Sans Mono", "Liberation Mono", "Nimbus Mono L", Monaco, "Courier New", Courier, monospace;
+	font-style: italic;
+	padding-top: 50px;
+	font-size: 15px;
+}
+
+.about-blurb a{
+	color: #F5AA2A;
 }
 
 h1{
-	font-family: 'chunkfiveroman', sans-serif;
+    font-family: 'chunkfiveroman', sans-serif;
 	font-size: 50px;
+    text-align: center;
 }
 
 h2{
 	font-family: 'chunkfiveroman', serif;
+    text-align: center;
 }
 
 /* Sticky footer styles
@@ -87,7 +95,7 @@ body {
 	bottom: 0;
 	width: 100%;
 	/* Set the fixed height of the footer here */
-	height: 40px;
+	height: auto;
 	background-color: #FFF2C9;
 	padding-top: 10px;
 	color: black;
