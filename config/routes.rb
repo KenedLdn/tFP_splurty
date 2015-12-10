@@ -60,4 +60,5 @@ Splurty::Application.routes.draw do
   # More comments here...
 
   get 'about', :to => 'quotes#about'
+  get 'error', :to => 'quotes#error'
 end

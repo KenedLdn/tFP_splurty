@@ -3,17 +3,11 @@ class QuotesController < ApplicationController
 		@quote = Quote.order("RANDOM()").first
 	end
 
-	def new
-		@quote = Quote.new
-	end
-
 	def create
 		@quote = Quote.create(quote_params)
 		if @quote.invalid?
-			flash[:error] = '<strong>Invalid input(s)!</strong>'
-			redirect_to new_quote_path
-		else
-			redirect_to root_path			
+			flash[:error] = '<h2>Hmm, strange - It seems like your inputs were somehow invalid.</h2>'
+			redirect_to error_path			
 		end
 	end
 
