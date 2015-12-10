@@ -1,6 +1,14 @@
 @import url(https://fonts.googleapis.com/css?family=Montserrat:700);
 @import url(https://fonts.googleapis.com/css?family=Fjalla+One);
 
+/*html { 
+  background: url('bg.jpg') no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}*/
+
 .clear {
 	clear:both;
 }
@@ -55,6 +63,20 @@
 
 header {
 	border-top: 9px solid #F5AA2A;
+}
+
+/*.quote-body { 
+  background: url('bg.jpg') no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}*/
+
+.quote-id{
+	color: #D11755;
+	font-size: 35px;
+	margin: auto;
 }
 
 .about-origin{
