@@ -61,4 +61,5 @@ Splurty::Application.routes.draw do
 
   get 'about', :to => 'quotes#about'
   get 'error', :to => 'quotes#error'
+  get 'last_quote', :to => 'quotes#last_quote'
 end

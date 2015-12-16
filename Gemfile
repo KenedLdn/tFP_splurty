@@ -34,6 +34,9 @@ gem 'sprockets', '2.11.0'
 # Include simple form
 gem 'simple_form'
 
+# Include Ruby HTML Beautifier
+gem 'htmlbeautifier'
+
 group :doc do
   # bundle exec rake doc:rails generates the API under doc/api.
   gem 'sdoc', require: false
